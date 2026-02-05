@@ -1,0 +1,60 @@
+.back_btn_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.5rem;
+
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.images_container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 2.5rem;
+}
+
+.images_container img {
+    max-width: 45vw;
+    max-height: 70vh;
+    border-radius: 1rem;
+    border-style: solid;
+    height: auto;
+    width: auto;
+}
+
+.form_container {
+  display: flex;
+  justify-content: center;
+}
+
+.form_container form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.input_label {
+    background-color: #e77325;
+    border-color: black;
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: "Copperplate Gothic Light";
+    font-weight: bold;
+    border-style: solid;
+    border-radius: 1rem;
+}
+
+.download_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #C4C4C4;
+        background-image: 
+        /* Lineas diagonales hacia la derecha */
+        repeating-linear-gradient(
+            45deg,
+            transparent,
+            transparent 40px,
+            #D2F03E 40px,
+            #D2F03E 41px
+        ),
+        /* Lineas diagonales hacia la izquierda */
+        repeating-linear-gradient(
+            -45deg,
+            transparent,
+            transparent 40px,
+            #D2F03E 40px,
+            #D2F03E 41px
+        ),
+        /* Lineas horizontales */
+        repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 60px,
+            #f3f4f6 60px,
+            #f3f4f6 61px
+        ),
+        /* Lineas verticales */
+        repeating-linear-gradient(
+            90deg,
+            transparent,
+            transparent 60px,
+            #f3f4f6 60px,
+            #f3f4f6 61px
+        );
+}
+
+.logo-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.logo-img img {
+    max-width: 25vw;
+    max-height: 50vh;
+    height: auto;
+    width: auto;
+}
+
+button {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: auto;
+    height: auto;
+    border-radius: 1rem;
+    border-width: 0.25rem;
+    border-color: #FA6800;
+    background-color: #B3EF0B;
+    font-family: "Copperplate Gothic Light";
+    cursor: pointer;
+}
+
+.buttons-containers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}

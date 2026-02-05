@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{{url_for('static', filename='resources/favicon.ico')}}" type="image/x-icon">
+    <link rel="stylesheet" href="{{url_for('static', filename='index.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='remove-bg.css')}}">
+    <title>Remove BackGround</title>
+</head>
+<body>
+
+    {%if not name%}
+    <div class="form_container">
+        <form action="/remove-bg" method="post" enctype="multipart/form-data">
+            <label for="upload_input" class="input_label">Select Image</label>
+            <input id="upload_input" type="file" name="image" accept="image/*" required hidden>
+    
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    {%endif%}
+
+    {%if name%}
+    <div class="images_container">
+        <img src="{{url_for('static', filename='temporal_files/pre/'+name)}}" alt="old_img">
+        <img src="{{url_for('static', filename='temporal_files/post/'+name)}}" alt="new_img">
+    </div>
+
+    <div class="download_section">
+        <a href="{{url_for('download', filename=name)}}"><Button>Download</Button></a>
+    </div>
+    {%endif%}
+    
+    <div class="back_btn_container">
+        <a href="{{url_for('index')}}"><button type="button">Go Back</button></a>
+    </div>
+
+</body>
+</html>
